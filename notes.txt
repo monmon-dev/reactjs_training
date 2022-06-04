@@ -1,0 +1,25 @@
+install: npm, yarn
+url: https://indecision.mead.io/; https://github.com/andrewjmead/react-course-2-indecision-app
+install: 
+npm install -g live-server 
+npm install -g babel-cli@6.24.1
+yarn add babel-preset-react@6.24.1 babel-preset-env@1.5.2
+
+run: 
+babel src/app.js --out-file=public/scripts/app.js --presets=env,react
+babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+
+!notes in running if re-open:
+first terminal: live-server public
+second terminal: babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+chill song: https://www.youtube.com/watch?v=FnLBnShJpUY
+          : https://www.youtube.com/watch?v=Y423D-GpX2I
+          
+babel src/playground/es6-let-const.js --out-file=public/scripts/app.js --presets=env,react --watch
+babel src/playground/es6-arrow-function.js --out-file=public/scripts/app.js --presets=env,react --watch
+babel src/playground/es6-arrow-function-2.js --out-file=public/scripts/app.js --presets=env,react --watch
+babel src/playground/build-it-visible.js --out-file=public/scripts/app.js --presets=env,react --watch
+babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+
+
