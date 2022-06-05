@@ -19,7 +19,23 @@ babel src/playground/es6-let-const.js --out-file=public/scripts/app.js --presets
 babel src/playground/es6-arrow-function.js --out-file=public/scripts/app.js --presets=env,react --watch
 babel src/playground/es6-arrow-function-2.js --out-file=public/scripts/app.js --presets=env,react --watch
 babel src/playground/build-it-visible.js --out-file=public/scripts/app.js --presets=env,react --watch
+babel src/playground/es6-classes-1.js --out-file=public/scripts/app.js --presets=env,react --watch
 babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
 babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+
+
+React components (Indecision App)
+<IndecisionApp />   ...this is going to be the Parent components
+    <Header />          ...this is going to be the Child components
+    <Actiom />          ...this is going to be the Child components
+    <Options />         ...this is going to be the Child components
+        <Option />          ...this is going to be the Child of <Options /> components
+    <AddOption />       ...this is going to be the Child components
+
+Constructor function is the function that gets called 
+when we make a new instance and it gets called 
+with all of the arguments we pass in.
+
+
 
 
