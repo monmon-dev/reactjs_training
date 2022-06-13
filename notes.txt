@@ -38,6 +38,21 @@ Constructor function is the function that gets called
 when we make a new instance and it gets called 
 with all of the arguments we pass in.
 
+we never want to manipulate the state or the previous state, instead we want to go ahead and
+just compute the new one. so, instead of using push, we're going to use the array concat method
+the array concat method is going to allow us to merge the values from this array with something
+new without affecting this array. so, it's not going to change that stuff
+
+Array.prototype.concat()
+The concat() method is used to merge two or more arrays
+This method does not change the existing arrays, but instead returns a new array
+Example:
+var arr1 = ['a', 'b', 'c']
+var arr2 = ['d','e','f',]
+var arr3 = arr1.concat(arr2); //['a','b','c','d','e','f']
+
+if (this.state.options.indexOf(option) > -1) //this code means it has a matched/same data
+
 
 
 
