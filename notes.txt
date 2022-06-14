@@ -53,6 +53,15 @@ var arr3 = arr1.concat(arr2); //['a','b','c','d','e','f']
 
 if (this.state.options.indexOf(option) > -1) //this code means it has a matched/same data
 
+Array.prototype.filter()
+The filter() method creates a new array with all elements that pass the test
+implemented by the provided function
+Example:
+var words = ["spray", "limit", "elite", "exuberant", "destruction", "present"]
 
+var longWords = words.filter(function(word){
+    return word.length > 6;
+})
+//Filtered array longWords is ["exuberant", "destruction", "present"]
 
 
