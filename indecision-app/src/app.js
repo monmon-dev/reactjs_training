@@ -6,12 +6,10 @@ class IndecisionApp extends React.Component {
     this.handleAddOption = this.handleAddOption.bind(this);
     this.handleDeleteOption = this.handleDeleteOption.bind(this);
     this.state = {
-      options: props.options,
+      options: [],
     };
   }
-
   componentDidMount() {
-    // console.log("fetching data");
     try {
       const json = localStorage.getItem("options");
       const options = JSON.parse(json);
@@ -24,7 +22,6 @@ class IndecisionApp extends React.Component {
     }
   }
   componentDidUpdate(prevProps, prevState) {
-    // console.log("saving data");
     if (prevState.options.length !== this.state.options.length) {
       const json = JSON.stringify(this.state.options);
       localStorage.setItem("options", json);
@@ -33,7 +30,6 @@ class IndecisionApp extends React.Component {
   componentWillUnmount() {
     console.log("componentWillUnMount");
   }
-
   handleDeleteOptions() {
     this.setState(() => ({ options: [] }));
   }
@@ -60,6 +56,7 @@ class IndecisionApp extends React.Component {
   }
   render() {
     const subtitle = "Put your life in the hands of a computer";
+
     return (
       <div>
         <Header subtitle={subtitle} />
@@ -78,10 +75,6 @@ class IndecisionApp extends React.Component {
   }
 }
 
-IndecisionApp.defaultProps = {
-  options: [],
-};
-
 const Header = (props) => {
   return (
     <div>
@@ -91,7 +84,6 @@ const Header = (props) => {
   );
 };
 
-//after the components, add a default value in title
 Header.defaultProps = {
   title: "Indecision",
 };
