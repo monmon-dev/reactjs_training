@@ -64,4 +64,41 @@ var longWords = words.filter(function(word){
 })
 //Filtered array longWords is ["exuberant", "destruction", "present"]
 
+componentDidMount() {
+    console.log("fetching data");
+}
+
+componentDidUpdate(prevProps, prevState) {
+    console.log("saving data");
+}
+
+componentWillUnmount() {
+    console.log("componentWillUnMount");
+}
+
+The componentDidMount() method allows us to execute the React code when the component 
+  is already placed in the DOM (Document Object Model). This method is called during 
+  the Mounting phase of the React Life-cycle i.e after the component is rendered.
+  All the AJAX requests and the DOM or state updation should be coded in the 
+  componentDidMount() method block. We can also set up all the major subscriptions 
+  here but to avoid any performance issues, always remember to unsubscribe them in the 
+  componentWillUnmount() method.
+Syntax: componentDidMount()
+
+The componentDidUpdate() method allows us to execute the React code when the 
+  component is updated. All the network requests that are to be made when the 
+  props passed to the component changes are coded here.
+  The componentDidUpdate()is called after componentDidMount() and can be useful 
+  to perform some action when the state of the component changes.
+Syntax: componentDidUpdate(prevProps, prevState, snapshot)
+
+The componentWillUnmount() method allows us to execute the React code when the 
+  component gets destroyed or unmounted from the DOM (Document Object Model). 
+  This method is called during the Unmounting phase of the React Life-cycle i.e 
+  before the component gets unmounted.
+  All the cleanups such as invalidating timers, canceling network requests, 
+  or cleaning up any subscriptions that were created in componentDidMount() 
+  should be coded in the componentWillUnmount() method block.
+  Tip: Never call setState() in componentWillUnmount() method.
+Syntax: componentWillUnmount()
 
