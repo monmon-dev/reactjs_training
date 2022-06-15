@@ -102,3 +102,7 @@ The componentWillUnmount() method allows us to execute the React code when the
   Tip: Never call setState() in componentWillUnmount() method.
 Syntax: componentWillUnmount()
 
+Webpack - is an asset bundler, it's going to combine all of the assets that make up our
+application with all of the assets needed from 3rd party libraries.
+Using webpack we're going to be able to take our own application code and break it up 
+across multiple files where each component lives in its own file
