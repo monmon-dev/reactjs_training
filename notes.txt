@@ -108,3 +108,10 @@ Using webpack we're going to be able to take our own application code and break 
 across multiple files where each component lives in its own file
 
 Webpack - allow us to organise our JavaScript
+
+Uninstall the Babel and Live-server
+npm uninstall -g babel-cli live-server
+npm install live-server babel-cli@6.24.1
+npm run serve
+npm run build
+
