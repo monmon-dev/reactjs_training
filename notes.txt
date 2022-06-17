@@ -115,3 +115,21 @@ npm install live-server babel-cli@6.24.1
 npm run serve
 npm run build
 
+
+npm install webpack@3.1.0
+npm run serve
+npm run build-babel
+
+to make npm run build works, install the following globally
+npm install -g webpack
+npm install -g webpack-cli
+if error still occurs, follow the advised on git command
+
+
+npm run serve
+npm run build
+npm run build-babel (no need to run it)
+
+
+
+
