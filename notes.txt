@@ -132,6 +132,14 @@ npm run build-babel (no need to run it)
 
 in export default you can named it anything you want, and don't include it in import {}
 
+npm install validator@8.0.0
+stop npm run build, after the npm install, re run npm run build
+npm install babel-preset-env@1.5.2
+npm install babel-preset-react@6.24.1
+npm i react
+npm i react-dom
+
+== after the npm install, re run npm run build
 
 
 
