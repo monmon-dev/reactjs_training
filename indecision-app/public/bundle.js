@@ -1,1 +1,1 @@
-console.log("app.js is running!!");
+(()=>{"use strict";console.log(!0),console.log(!1)})();

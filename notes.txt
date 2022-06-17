@@ -124,7 +124,7 @@ to make npm run build works, install the following globally
 npm install -g webpack
 npm install -g webpack-cli
 if error still occurs, follow the advised on git command
-
+update ./public/index.html and use the bundle.js instead of app.js
 
 npm run serve
 npm run build
