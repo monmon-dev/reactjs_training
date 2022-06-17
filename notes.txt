@@ -130,6 +130,8 @@ npm run serve
 npm run build
 npm run build-babel (no need to run it)
 
+in export default you can named it anything you want, and don't include it in import {}
+
 
 
 
