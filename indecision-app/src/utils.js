@@ -1,4 +1,4 @@
-console.log("utils.js is running");
+console.log('utils.js is running');
 
 export const square = (x) => x * x;
 
@@ -8,4 +8,4 @@ export default (a, b) => a - b;
 
 // export { square, add, subtract as default };
 
-// exports -default export - named exports
+// exports - default export - named exports
