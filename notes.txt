@@ -146,3 +146,7 @@ npm install babel-core@6.25.0 babel-loader@7.1.1
 npm run serve
 npm run build
 
+== by adding this on webpack.config.js
+devtool: "cheap-module-eval-source-map",
+== By setting the dev to a property, we can configure source maps with little to no effort.
+== These are great for development.
