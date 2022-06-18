@@ -141,5 +141,8 @@ npm i react-dom
 
 == after the npm install, re run npm run build
 
+npm install babel-core@6.25.0 babel-loader@7.1.1
 
+npm run serve
+npm run build
 
