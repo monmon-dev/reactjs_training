@@ -150,3 +150,11 @@ npm run build
 devtool: "cheap-module-eval-source-map",
 == By setting the dev to a property, we can configure source maps with little to no effort.
 == These are great for development.
+
+npm install webpack-dev-server@2.5.1
+always restart your npm run build when you install an npm
+
+now you don't need to run npm run serve and npm run build, just run only the npm run dev-server
+this will run both the serve and build, there's no need for bundler.js
+
+npm run dev-server
