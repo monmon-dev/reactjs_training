@@ -158,3 +158,7 @@ now you don't need to run npm run serve and npm run build, just run only the npm
 this will run both the serve and build, there's no need for bundler.js
 
 npm run dev-server
+
+npm install babel-plugin-transform-class-properties@6.24.1
+
+converting ES6 methods into class properties
