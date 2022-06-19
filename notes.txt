@@ -162,3 +162,6 @@ npm run dev-server
 npm install babel-plugin-transform-class-properties@6.24.1
 
 converting ES6 methods into class properties
+
+only run this on terminal
+npm run dev-server
