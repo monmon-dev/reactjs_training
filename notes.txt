@@ -167,3 +167,6 @@ only run this on terminal
 npm run dev-server
 
 npm install react-modal@2.2.2
+
+check https://getbem.com for naming convention also known as "Block Element Modifier"
+
