@@ -170,3 +170,5 @@ npm install react-modal@2.2.2
 
 check https://getbem.com for naming convention also known as "Block Element Modifier"
 
+check normalize.css, this makes browsers render all elements more consistently and in line
+with modern standards. It precisely targets only the styles that need normalizing
