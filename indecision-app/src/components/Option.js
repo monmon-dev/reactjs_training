@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Option = (props) => (
   <div>
@@ -9,7 +9,7 @@ const Option = (props) => (
       }}
     >
       remove
-    </button>
+      </button>
   </div>
 );
 

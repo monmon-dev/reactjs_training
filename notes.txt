@@ -165,3 +165,5 @@ converting ES6 methods into class properties
 
 only run this on terminal
 npm run dev-server
+
+npm install react-modal@2.2.2
